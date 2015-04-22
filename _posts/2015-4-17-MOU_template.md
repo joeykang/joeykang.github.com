@@ -56,6 +56,11 @@ Inline code are surround by `backtick` key. To create a block code:
 	Indent each line by at least 1 tab, or 4 spaces.
     var Mou = exactlyTheAppIwant; 
 
+```Java
+// Github Flavored
+System.out.ln();
+```
+
 ####  Ordered Lists
 
 Ordered lists are created using "1." + Space:
