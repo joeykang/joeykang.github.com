@@ -1,4 +1,4 @@
-# How to drop table in SQLite
+# How to drop table on SQLite
 
 ### Query
 `IF EXISTS` and `IF NOT EXISTS` were added to SQLite 3.3.0
