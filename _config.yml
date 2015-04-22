@@ -9,3 +9,4 @@ github_username:  joeykang
 
 # Build settings
 markdown: kramdown
+markdown_ext:  markdown,mkdown,mkdn,mkd,md
