@@ -1,4 +1,7 @@
-# How to get SQLite version
+---
+layout: post
+title: How to get SQLite version
+---
 
 ### Query
 
