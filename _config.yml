@@ -9,5 +9,5 @@ github_username:  joeykang
 
 # Build settings
 markdown: redcarpet
-#pygments: true
+pygments: true
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
