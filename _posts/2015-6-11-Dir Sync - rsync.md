@@ -8,4 +8,6 @@ title: How to sync/backup directory on OSX
 
 -- delete: delete files in <dest dir> that don't exist in <source dir>
 
+Note: Exceptions happen sometimes
+
 
