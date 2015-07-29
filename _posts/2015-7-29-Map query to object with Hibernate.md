@@ -2,7 +2,7 @@
 layout: post
 title: How to map query to object with Hibernate
 ---
-###C# and .Net
+### C# and .Net
 
 	string Sql = "Select A, B, C from members"; 
 	IList sqlResult = NHibernateSession.CreateSQLQuery(Sql).List();
