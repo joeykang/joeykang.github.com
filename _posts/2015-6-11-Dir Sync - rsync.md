@@ -4,7 +4,9 @@ title: How to sync/backup directory with rsync on OSX
 ---
 ### In Shell:
 
-	rsync -avE --delete <source dir> <dest dir>
+	rsync -avE --delete <source object> <dest dir>
+
+Notes: `source object` will be synchronized in `dest dir`.
 
 -a: keep source date  
 -v: verbose  
