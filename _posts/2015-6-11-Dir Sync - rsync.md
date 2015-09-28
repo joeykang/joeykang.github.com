@@ -14,5 +14,5 @@ title: How to sync/backup directory with rsync on OSX
 Other options:
 --exclude=pattern_to_exclude
 
-###Windows 7:
+### Windows 7:
 	robocopy <Source dir> <Dest dir> /e /mir /np /log:backup_log.txt
