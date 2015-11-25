@@ -2,6 +2,7 @@
 layout: post
 title: How to sync/backup directory with rsync on OSX
 ---
+Update: I don't recommend `rsync` for this purpose as errors that I'm not able to get over come up intermittently. Use `FreeFileSync` app instead.
 ### In Shell:
 
 	rsync -avE --delete <source object> <dest dir>
