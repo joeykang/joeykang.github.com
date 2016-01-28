@@ -21,7 +21,7 @@ title: Optional/Non-optional in Swift
 #### 3) Non optional 
         var _localStr: String
         _localStr = "ABC"
-        let _strLen = _localStr<p style='color:red'>!</p>.characters.count  ==> Compile error: forced unwrapping non-optional value
+        let _strLen = _localStr!.characters.count  ==> Compile error: forced unwrapping non-optional value
 #### 4) Non optional
         var _localStr: String
         _localStr = "ABC"
