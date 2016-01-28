@@ -3,6 +3,7 @@ layout: post
 title: Optional/Non-optional in Swift
 ---
 `Optional variable`: its content can exist or be empty(nil)
+
 `Non-optional variable`: its contect must exist
 
 ### Examples:
