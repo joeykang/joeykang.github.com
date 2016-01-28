@@ -9,9 +9,10 @@ title: Optional/Non-optional in Swift
 ### Examples:
 
 ####1) Non optional
+```
         var _localStr: String
         print("unwrapped-1 \(_localStr)")  ==> Compile error: not initialized
-
+```
 ####2) Non optional
         var _localStr: String
         _localStr = "ABC"
