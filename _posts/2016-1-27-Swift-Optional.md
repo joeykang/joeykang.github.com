@@ -79,3 +79,22 @@ title: Optional/Non-optional in Swift
         _localStr = "ABC"
         let _strLen = _localStr!.characters.count
         print("_localStr \(_localStr!), length \(_strLen?)")  ==> Compile error: forced optional chaining non-optional value
+#### 15) optional
+        var _localStr: String?
+        let _strLen = _localStr?.characters.count	// _localStr is empty(nil)
+        if _strLen < 0 {	// nil < 0 works, returns true
+            print("length \(_strLen)")
+        }
+        
+		// safe way to handle _strLen
+        if let _strLen = _localStr?.characters.count {
+            print("length2 \(_strLen)")
+        } else {
+            print("_strLen < 0 \(_strLen < 0), nil < 0 \(nil < 0)")
+            print("nil == 0 \(nil == 0), nil > 0 \(nil > 0)")
+            print("_strLen unavailable")
+        }
+	==> Output:
+		length nil
+		_strLen < 0 true, nil < 0 true
+		nil == 0 false, nil > 0 false
