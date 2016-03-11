@@ -25,6 +25,7 @@ The primary use of implicitly unwrapped optionals in Swift is during class initi
 ```
 
 #### 2) Implicitly Unwrapped Optional
+```swift
         var _localStr: String!
         _localStr = nil			// Can be nil as it's optional
         _localStr = "Better"
@@ -32,13 +33,18 @@ The primary use of implicitly unwrapped optionals in Swift is during class initi
                                                    // like non-optional
         let nCount2 = _localStr?.characters.count   // Possible to unwrap
         let nCount3 = _localStr!.characters.count   // Possible to forced unwrap
+```
 
 #### 3) Non optional
+```swift
         var _localStr: String
         _localStr = "ABC"
         print("_localStr \(_localStr)")        
         let nCount = _localStr?.characters.count    // Compile error, Can't unwrap
+```
 
 #### 4) Non optional 
+```swift
         var _localStr: String
         _localStr = nil                            // Compile error, can't be nil
+```
