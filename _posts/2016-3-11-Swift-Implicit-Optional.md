@@ -15,7 +15,7 @@ The primary use of implicitly unwrapped optionals in Swift is during class initi
 ### Examples:
 
 #### 1) Optional
-```
+```swift
         var _localStr: String?
         _localStr = nil			// Can be nil as it's optional
         _localStr = "Better"
