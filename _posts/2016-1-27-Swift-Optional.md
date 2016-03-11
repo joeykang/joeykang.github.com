@@ -9,77 +9,118 @@ title: Optional/Non-optional in Swift
 ### Examples:
 
 #### 1) Non optional
-```
+```swift
         var _localStr: String
         print("unwrapped-1 \(_localStr)")  ==> Compile error: not initialized
 ```
+
 #### 2) Non optional
+```swift
         var _localStr: String
         _localStr = "ABC"
         print("_localStr \(_localStr)")    ==> Compile OK, No need to unwrap
         ==> Output: _localStr ABC
+```
+
 #### 3) Non optional 
+```swift
         var _localStr: String
         _localStr = "ABC"
         let _strLen = _localStr!.characters.count  ==> Compile error: forced unwrapping non-optional value
+```
+
 #### 4) Non optional
+```swift
         var _localStr: String
         _localStr = "ABC"
         let _strLen = _localStr?.characters.count  ==> Compile error: forced optional chaining non-optional
 
+```
+
 #### 5) optional
+```swift
         var _localStr: String?
         print("unwrapped-1 \(_localStr)")  ==> Compile OK,
         ==> Output: unwrapped-1 nil
+```
+
 #### 6) optional
+```swift
         var _localStr: String?
         _localStr = "ABC"
         print("_localStr \(_localStr)")    ==> Compile OK, 
         ==> Output: _localStr Optional("ABC")
+```
+
 #### 7) optional
+```swift
         var _localStr: String?
         _localStr = "ABC"
         print("_localStr \(_localStr!)")    ==> Compile OK, forced unwrap
         ==> Output: _localStr ABC
 
+```
+
 #### 8) optional
+```swift
         var _localStr: String?
         print("unwrapped-1 \(_localStr!)") ==> Compile OK. forced unwrap
         ==> Runtime crash
+```
+
 #### 9) optional
+```swift
         var _localStr: String?
         _localStr = "ABC"
         let _strLen = _localStr?.characters.count
         print("_localStr \(_localStr!), length \(_strLen)")  
         ==> Output: _localStr ABC, length Optional(3)
+```
+
 #### 10) optional
+```swift
         var _localStr: String?
         _localStr = "ABC"
         let _strLen = _localStr.characters.count  ==> Compile error: not upwrapped
+```
+
 #### 11) optional
+```swift
         var _localStr: String?
         _localStr = "ABC"
         let _strLen = _localStr?.characters.count
         print("_localStr \(_localStr!), length \(_strLen!)")
         ==> Output: _localStr ABC, length 3
+```
+
 #### 12) optional
+```swift
         var _localStr: String?
         _localStr = "ABC"
         let _strLen = _localStr!.characters.count
         print("_localStr \(_localStr!), length \(_strLen!)")  ==> Compile error: forced unwrapping non-optional value
 
+```
+
 #### 13) optional
+```swift
         var _localStr: String?
         _localStr = "ABC"
         let _strLen = _localStr!.characters.count
         print("_localStr \(_localStr!), length \(_strLen)")
         ==> Output: _localStr ABC, length 3
+```
+
 #### 14) optional
+```swift
         var _localStr: String?
         _localStr = "ABC"
         let _strLen = _localStr!.characters.count
         print("_localStr \(_localStr!), length \(_strLen?)")  ==> Compile error: forced optional chaining non-optional value
+```
+
 #### 15) optional
+```swift
         var _localStr: String?
         let _strLen = _localStr?.characters.count	// _localStr is empty(nil)
         if _strLen < 0 {	// nil < 0 works, returns true
@@ -98,3 +139,5 @@ title: Optional/Non-optional in Swift
 		length nil
 		_strLen < 0 true, nil < 0 true
 		nil == 0 false, nil > 0 false
+```
+
