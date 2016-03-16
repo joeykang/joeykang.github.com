@@ -10,5 +10,6 @@ title: How to drop table on SQLite
 ```SQL
 DROP TABLE IF EXISTS TABLE_NAME;
 ```
+
 ### Reference
 <http://stackoverflow.com/questions/3675032/drop-existing-table-in-sqlite-when-if-exists-operator-is-not-supported> 

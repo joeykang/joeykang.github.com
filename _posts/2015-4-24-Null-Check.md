@@ -4,8 +4,7 @@ title: How to check Empty String SAFELY
 ---
 
 
-
-```
+```objective-c
 NSString *title;
 ...
 if (title == nil || title.length == 0 ) 
@@ -16,7 +15,7 @@ if (title == nil || title.length == 0 )
 
 `[NSNull null]` is used in collections like NSArray and NSDictionary to add null object because they can't contain `nil`.
 
-```
+```objective-c
 NSArray *container = [NSArray arrayWithObjects:[NSNull null], @"", nil];
 ...
 for (NSString *title in container) {

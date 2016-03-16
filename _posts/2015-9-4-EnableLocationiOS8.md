@@ -15,6 +15,7 @@ requestAlwaysAuthorization (on the instance)
 // For use in foreground
 requestWhenInUseAuthorization (on the instance)
 ```
+
 ### ADD a key to your project's *Info.plist*
 
 ```

@@ -3,7 +3,7 @@ layout: post
 title: How to map query to object with Hibernate
 ---
 ### C# and .Net
-
+```cs
 	string Sql = "Select A, B, C from members"; 
 	IList sqlResult = NHibernateSession.CreateSQLQuery(Sql).List();
 	List<Member> objList = new List<Member>();
@@ -15,7 +15,7 @@ title: How to map query to object with Hibernate
 		aMember.Address = (string)ob[2];
 		objList.Add(aMember);
 	}  
-
+```
 
 
 

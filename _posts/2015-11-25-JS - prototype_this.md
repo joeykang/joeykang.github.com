@@ -3,7 +3,7 @@ layout: post
 title: Javascript - prototype and this
 ---
 ### this:
-```
+```javascript
 // 1. Property x will be added to window(global) object by executing A();
 // 2. Property x will be added to new object of type A by executing new A();
 
@@ -34,7 +34,7 @@ function () {
 ```
 
 ### prototype:
-```
+```javascript
 // Property y will be added to new objects Only by new X()
 
 > var X = function () { };
