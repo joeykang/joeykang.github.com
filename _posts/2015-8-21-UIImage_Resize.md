@@ -6,7 +6,7 @@ title: Simple resize with UIImage
 
 ### UIImage+Resize.h
 
-```objective-c
+``` objective-c
 @interface UIImage (Resize)
 
 + (UIImage*)imageWithImage:(UIImage*)image
@@ -17,7 +17,7 @@ title: Simple resize with UIImage
 
 ### UIImage+Resize.m
 
-```objective-c
+``` objective-c
 #import "UIImage+Resize.h"
 
 @implementation UIImage (Resize)
