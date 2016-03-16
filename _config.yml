@@ -1,5 +1,5 @@
 # Site settings
-title: Online Bookmarks
+title: Joeybase
 email: kangbj_at_gmail.com
 description: Knowledge base focused on programming
 baseurl: "" # the subpath of your site, e.g. /blog/
@@ -9,8 +9,11 @@ github_username:  joeykang
 
 # Build settings
 markdown: kramdown
-markdown_ext:  markdown,mkdown,mkdn,mkd,md
+sass:
+  style: compressed
 
-redcarpet:
-  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
-
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-seo-tag
